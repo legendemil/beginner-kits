@@ -26,12 +26,6 @@ System.config({
         },
         "*.js": {
           "loader": "ts"
-        },
-        "*.html.ts": {
-          "loader": "html-resource-plugin"
-        },
-        "*.css.ts": {
-          "loader": "css-resource-plugin"
         }
       }
     }
