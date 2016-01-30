@@ -31,7 +31,7 @@ System.config({
     "core-js": "npm:core-js@2.0.3",
     "fetch": "github:github/fetch@0.10.1",
     "font-awesome": "npm:font-awesome@4.5.0",
-    "text": "github:systemjs/plugin-text@0.0.3",
+    "text": "github:systemjs/plugin-text@0.0.4",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
     },
