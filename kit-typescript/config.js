@@ -1,24 +1,20 @@
 System.config({
-  baseURL: ".",
+  baseURL: "src",
   defaultJSExtensions: true,
-  transpiler: "babel",
-  babelOptions: {
-    "optional": [
-      "runtime",
-      "optimisation.modules.system"
-    ]
-  },
+  transpiler: "typescript",
   typescriptOptions: {
-    "tsconfig": true
+    "target": "ES5",
+    "module": "system",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
   paths: {
-    "app.html": "src/app.html",
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*"
+    "github:*": "../jspm_packages/github/*",
+    "npm:*": "../jspm_packages/npm/*"
   },
 
   packages: {
-    "app": {
+    "../src": {
       "main": "app",
       "defaultExtension": "ts",
       "meta": {
@@ -36,7 +32,6 @@ System.config({
   },
 
   map: {
-    "app": "src",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.1.0",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.1.1",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.0-beta.1.1.0",
